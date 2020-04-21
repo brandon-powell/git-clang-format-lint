@@ -2,10 +2,10 @@
 
 cd "$GITHUB_WORKSPACE"
 
-git fetch
+#git pull origin devel
 #git --version
 #clang-format --version
-diff=`git-clang-format --diff --commit $INPUT_BASE`
+diff=`git-clang-format --diff --commit devel`
 [ "$diff" = "no modified files to format" ] && exit 0
 [ "$diff" = "clang-format did not modify any files" ] && exit 0
 
