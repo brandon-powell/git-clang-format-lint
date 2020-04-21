@@ -2,6 +2,7 @@
 
 cd "$GITHUB_WORKSPACE"
 
+git fetch
 #git pull origin devel
 #git --version
 #clang-format --version
