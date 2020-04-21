@@ -5,7 +5,7 @@ cd "$GITHUB_WORKSPACE"
 #git pull origin devel
 #git --version
 #clang-format --version
-diff=`git-clang-format --diff --commit devel`
+diff=`git-clang-format --diff --commit m2`
 [ "$diff" = "no modified files to format" ] && exit 0
 [ "$diff" = "clang-format did not modify any files" ] && exit 0
 
