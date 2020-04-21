@@ -3,7 +3,7 @@
 cd "$GITHUB_WORKSPACE"
 
 git fetch --all
-diff=`git-clang-format --diff --commit origin/m2`
+diff=`git-clang-format --diff --commit $INPUT_BASE`
 [ "$diff" = "no modified files to format" ] && exit 0
 [ "$diff" = "clang-format did not modify any files" ] && exit 0
 
